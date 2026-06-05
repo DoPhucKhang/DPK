@@ -1,181 +1,37 @@
-/* =========================
-   RESET
-========================= */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background: #fff; }
+
+/* HEADER */
+#header { background-color: #4CAF50; padding: 0 10px; border-bottom: 3px solid #388E3C; }
+#header > ul { display: flex; list-style: none; padding: 0; margin: 0; }
+#header li { color: white; padding: 12px 10px; font-size: 12px; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+
+/* BỐ CỤC CHÍNH */
+#container { display: flex; max-width: 1100px; margin: 20px auto; gap: 20px; }
+
+#content-main { flex: 2; display: flex; gap: 20px; }
+#col-1, #col-2 { flex: 1; }
+
+#col-1 img, #col-2 img { width: 100%; height: 200px; object-fit: cover; }
+h2 { font-size: 18px; margin: 10px 0; color: #333; line-height: 1.2; }
+p { font-size: 14px; color: #666; line-height: 1.5; }
+ul { padding-left: 20px; margin-top: 15px; }
+li { margin-bottom: 8px; font-size: 13px; font-weight: bold; color: #444; }
+
+/* SIDEBAR: "Linh hồn" của giao diện báo */
+#sidebar { flex: 1; border: 1px solid #ddd; padding: 0; background: #fff; }
+#sidebar-header { 
+    background: #eef9ee; 
+    color: #4CAF50; 
+    font-size: 12px; 
+    font-weight: bold; 
+    padding: 10px; 
+    text-align: center; 
+    border-bottom: 2px solid #4CAF50;
+    margin-bottom: 10px;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    background:#fff;
-    color:#333;
-}
-
-/* =========================
-   HEADER XANH (ĐÚNG NHƯ ẢNH)
-========================= */
-
-.top-header{
-    width:100%;
-    height:42px;
-    background:#5aa02c;
-    display:flex;
-    align-items:center;
-    border-bottom:1px solid #4f8d27;
-}
-
-/* icon trái */
-.top-header .icon{
-    width:42px;
-    height:42px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#fff;
-    font-size:16px;
-    border-right:1px solid rgba(255,255,255,0.2);
-    flex-shrink:0;
-}
-
-/* menu */
-.top-header ul{
-    display:flex;
-    list-style:none;
-    height:42px;
-    overflow-x:auto;
-    white-space:nowrap;
-    scrollbar-width:none;
-}
-
-.top-header ul::-webkit-scrollbar{
-    display:none;
-}
-
-.top-header ul li{
-    height:42px;
-}
-
-.top-header ul li a{
-    display:flex;
-    align-items:center;
-    height:42px;
-    padding:0 16px;
-    text-decoration:none;
-    color:#fff;
-    font-size:12px;
-    font-weight:700;
-    text-transform:uppercase;
-    border-right:1px solid rgba(255,255,255,0.12);
-}
-
-.top-header ul li a:hover{
-    background:#4f8d27;
-}
-
-/* =========================
-   CONTAINER 3 CỘT (SỬA CHUẨN ẢNH)
-========================= */
-
-.news-container{
-    width:1200px;
-    margin:15px auto;
-
-    display:grid;
-    grid-template-columns: 380px 380px 1fr;
-    gap:20px;
-}
-
-/* =========================
-   BOX TIN CHÍNH (TRÁI + GIỮA)
-========================= */
-
-.featured img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-    display:block;
-}
-
-.featured h2{
-    font-size:22px;
-    font-weight:700;
-    line-height:1.3;
-    margin:10px 0;
-    color:#222;
-}
-
-.featured p{
-    font-size:14px;
-    line-height:1.5;
-    color:#666;
-}
-
-/* LIST TIN */
-.news-list{
-    margin-top:12px;
-    list-style:none;
-}
-
-.news-list li{
-    padding:12px 0;
-    border-top:1px solid #e5e5e5;
-    font-size:15px;
-    font-weight:600;
-    line-height:1.4;
-    cursor:pointer;
-}
-
-.news-list li:hover{
-    color:#5aa02c;
-}
-
-/* =========================
-   SIDEBAR PHẢI (MÀU XÁM NHƯ ẢNH)
-========================= */
-
-.sidebar{
-    border:1px solid #ddd;
-    background:#f5f5f5;
-}
-
-.sidebar-title{
-    background:#fff;
-    padding:14px;
-    text-align:center;
-    font-weight:700;
-    border-bottom:1px solid #ddd;
-}
-
-.sidebar-item{
-    display:flex;
-    gap:10px;
-    padding:12px;
-    background:#fff;
-    border-bottom:1px solid #eee;
-}
-
-.sidebar-item img{
-    width:95px;
-    height:65px;
-    object-fit:cover;
-}
-
-.sidebar-item h4{
-    font-size:13px;
-    line-height:1.4;
-    font-weight:600;
-}
-
-/* =========================
-   FIX RESPONSIVE
-========================= */
-
-@media(max-width:1024px){
-    .news-container{
-        width:100%;
-        grid-template-columns:1fr;
-        padding:0 10px;
-    }
-}
+/* TIN NHỎ SIDEBAR */
+#side-news { display: flex; flex-wrap: wrap; padding: 10px; border-bottom: 1px dotted #ccc; }
+#side-news img { width: 80px; height: 50px; object-fit: cover; margin-right: 10px; }
+#side-news h4 { flex: 1; font-size: 13px; margin: 0; line-height: 1.3; }
+#side-news p { width: 100%; font-size: 11px; color: #999; margin: 5px 0 0 85px; }
