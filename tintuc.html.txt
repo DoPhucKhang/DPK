@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24h.com</title>
+    <link rel="stylesheet" href="tintuc.css">
+</head>
+<body>
+    <!-- Phân vùng Container chứa 3 cột -->
+    <div id="container">
+        
+        <!-- Phân vùng Cột trái -->
+        <div id="col-left">
+            <div class="news-item">
+                <img src="https://placehold.co/300x200/ddd/999?text=iPhone" alt="iPhone">
+                <h3>Bất ngờ với 5 thiết bị có thể sạc ngược bằng iPhone</h3>
+                <p>Từ iPhone 15, cổng kết nối USB-C đã biến chiếc điện thoại thành nguồn sạc dự phòng 4.5W...</p>
+            </div>
+            <div class="news-item">
+                <h4>7 thông báo quan trọng nhất tại Microsoft Build 2026</h4>
+            </div>
+            <div class="news-item">
+                <h4>3 vật dụng nên có trong phòng khi bật điều hòa mùa nắng nóng</h4>
+            </div>
+            <div class="news-item">
+                <h4>Tên gọi của Galaxy Z Fold 8 đã được chốt hạ</h4>
+            </div>
+            <div class="news-item">
+                <h4>Cách giải quyết điều hòa và nhiều thiết bị gia dụng bị ố vàng</h4>
+            </div>
+        </div>
+
+        <!-- Phân vùng Cột giữa -->
+        <div id="col-center">
+            <div class="news-item big">
+                <img src="https://placehold.co/600x350/ddd/999?text=Sa+mac" alt="Sa mac">
+                <h2>Mảnh "hành tinh đã mất" rơi xuống sa mạc Sahara</h2>
+                <p>Một thiên thạch kỳ lạ được tìm thấy ở sa mạc Sahara rất có thể là tàn tích của một mảnh hành tinh...</p>
+            </div>
+            <div class="news-item">
+                <h4>Mô hình AI "khủng" với 120 tỷ tham số, tối ưu cho tiếng Việt</h4>
+            </div>
+            <div class="news-item">
+                <h4>Cập nhật quan trọng dành cho tất cả người dùng thiết bị lưu trữ này</h4>
+            </div>
+            <div class="news-item">
+                <h4>Những vi phạm khi sử dụng mạng xã hội có thể bị phạt tới 50 triệu đồng</h4>
+            </div>
+            <div class="news-item">
+                <h4>Loại pin thế hệ mới "chíp" mọi điều kiện khắc nghiệt: Lạnh -40 độ C và nóng 55 độ C</h4>
+            </div>
+        </div>
+
+        <!-- Phân vùng Cột phải -->
+        <div id="col-right">
+            <div id="box-right">
+                <div class="box-title">BÓNG ĐÁ & THỂ THAO MẠNG XÃ HỘI</div>
+                <div class="news-item">
+                    <img src="https://placehold.co/250x150/ddd/999?text=MU" alt="MU">
+                    <h4>Man Utd cứng rắn với Barcelona, quyết không để Rashford bị ép giá</h4>
+</div>
+                <div class="news-item small">
+                    <img src="https://placehold.co/60x60/ddd/999?text=1" alt="">
+                    <p>Elliot Anderson và cái bẫy 100 triệu bảng của tuyển Anh</p>
+                </div>
+                <div class="news-item small">
+                    <img src="https://placehold.co/60x60/ddd/999?text=2" alt="">
+                    <p>Cafur: Vì sao ông được xem là huyền thoại vĩ đại nhất mọi thời đại?</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
